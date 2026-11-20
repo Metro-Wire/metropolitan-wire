@@ -126,6 +126,34 @@ h1 {
   margin: 12px auto 45px;
 }
 
+/* Linked OLÓWÓNYO wordmark advertisement; the lower ad stays unchanged. */
+.top-ad--olowonyo {
+  background: #ffffff;
+}
+
+.top-ad--olowonyo .top-ad-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 90px;
+  line-height: 0;
+  text-decoration: none;
+}
+
+.top-ad--olowonyo .top-ad-link:focus-visible {
+  outline: 2px solid var(--gold-light);
+  outline-offset: 3px;
+}
+
+.top-ad--olowonyo .top-ad-image {
+  display: block;
+  width: 100%;
+  max-height: 90px;
+  height: auto;
+  object-fit: contain;
+}
+
 /* Main directory */
 
 .site-content {
@@ -324,6 +352,10 @@ h1 {
 
   .top-ad {
     width: calc(100% - 24px);
+    min-height: 72px;
+  }
+
+  .top-ad--olowonyo .top-ad-link {
     min-height: 72px;
   }
 
