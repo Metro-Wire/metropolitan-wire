@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google Analytics 4 -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PGGCSMQ9G9"></script>
+  <!-- Google Analytics 4 with regional Consent Mode v2 defaults -->
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
+
+    // Advertising consent remains denied worldwide; analytics is enabled
+    // outside the regions listed below, subject to applicable requirements.
+    gtag('consent', 'default', {
+      'ad_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied',
+      'analytics_storage': 'granted'
+    });
+    // EEA countries, United Kingdom, Switzerland: no analytics cookies
+    // unless an appropriate consent solution is added later.
+    gtag('consent', 'default', {
+      'analytics_storage': 'denied',
+      'region': ['AT', 'BE', 'BG', 'HR', 'CY', 'CZ', 'DK', 'EE', 'FI', 'FR', 'DE', 'GR', 'HU', 'IS', 'IE', 'IT', 'LV', 'LI', 'LT', 'LU', 'MT', 'NL', 'NO', 'PL', 'PT', 'RO', 'SK', 'SI', 'ES', 'SE', 'GB', 'CH']
+    });
     gtag('js', new Date());
     gtag('config', 'G-PGGCSMQ9G9');
   </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PGGCSMQ9G9"></script>
 
   <meta charset="UTF-8">
 
@@ -103,12 +118,23 @@
       <h2>Cookies and Analytics</h2>
 
       <p>
-        Metropolitan Wire uses Google Analytics 4 to understand how visitors
-        use this website. Google Analytics may collect information about pages
-        visited, traffic sources, approximate geographic location, device and
-        browser characteristics, and interactions such as clicks on links to
-        third-party news publications. Google Analytics may use cookies or
-        similar technologies to distinguish visitors and sessions.
+        Metropolitan Wire uses Google Analytics 4 to understand website visits
+        and interactions, including visits to pages and outbound links to
+        third-party news publications. Depending on the visitor's location and
+        browser settings, Google Analytics may use cookies to distinguish
+        visitors and sessions and may process technical information such as
+        browser and device characteristics, traffic sources, and approximate
+        geographic location.
+      </p>
+
+      <p>
+        We configure analytics-cookie consent as denied by default for visitors
+        in the European Economic Area, United Kingdom, and Switzerland.
+        When analytics cookies are denied, Google's consent-aware tag may still
+        transmit limited cookieless measurement signals. Advertising-related
+        Google consent settings are denied by default worldwide. Visitors who
+        block analytics using browser settings or other tools may not be counted
+        in our traffic reports.
       </p>
 
       <p>
